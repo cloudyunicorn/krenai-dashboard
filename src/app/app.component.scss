@@ -1,0 +1,13 @@
+.app-container {
+    // width: 100%;
+    min-height: 100%;
+    background-color: #ECECEC;
+    .sidebar {
+        background-color: #ECECEC;
+    }
+    .main-content {
+        background-color: white;
+        border-top-left-radius: 20px;
+        z-index: 10;
+    }
+}

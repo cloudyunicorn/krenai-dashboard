@@ -1,0 +1,22 @@
+.marker {
+    height: 40px;
+    width: 40px;
+    margin-right: 20px;
+    background-color: #1E86FF;
+    border-radius: 10px;
+}
+.section-label {
+    font-size: 16px;
+    font-weight: 500;
+}
+.active {
+    color: #FFD764;
+    margin-right: 5px;
+}
+.inactive {
+    color: #EBA542;
+    margin-right: 5px;
+}
+.list {
+    line-height: 40px;
+}

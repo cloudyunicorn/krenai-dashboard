@@ -1,0 +1,60 @@
+.main-sidebar {
+    .brand-icon {
+        padding-left: 15px;
+    }
+    .brand-name {
+        margin-top: 15px;
+        margin-left: 15px;
+        font-weight: 900;
+        color: #FE4D55;
+    }
+    .sub-heading {
+        margin-left: 20px;
+        margin-bottom: 0;
+        margin-top: 20px;
+        font-weight: 600;
+        color: gray;
+    }
+    .menu-button {
+        background-color: #ECECEC;
+    }
+    .plan-card {
+        background-color: white;
+        border-radius: 10px;
+        margin: 20px 15px;
+        height: 150px;
+        .progress {
+            font-size: 12px;
+            font-weight: 500;
+            color: gray;
+            padding: 10px;
+            padding-bottom: 0;
+            p {
+                margin-bottom: 2px;
+            }
+        }
+        .progress-bar {
+            width: 100px;
+            height: 20px;
+            background-color: red;
+            margin: 5px 10px;
+        }
+        mat-progress-bar {
+            width: calc(100% - 25px);
+            margin-left: 10px;
+        }
+        .current-plan {
+            font-size: 13px;
+            font-weight: 500;
+            margin: 10px;
+            text-align: center;
+            color: white;
+            background-color: #007E8B;
+            border-radius: 10px;
+            &:hover {
+                background-color: #005d68;
+                cursor: pointer;
+            }
+        }
+    }
+}

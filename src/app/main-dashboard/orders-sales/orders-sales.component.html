@@ -1,0 +1,112 @@
+<div class="orders-sales-section" fxLayout="row">
+    <div class="section-heading" fxLayout="column" fxFlex="20">
+        <div fxLayout="row">
+            <div class="marker"></div>
+            <div class="section-label">
+                Orders &
+                <br>
+                Sales
+            </div>
+        </div>
+        <app-action-button text="VIEW ORDERS ->" [isDisabled]="false"></app-action-button>
+        <app-action-button text="VIEW INVENTORY REPORT ->" [isDisabled]="false"></app-action-button>
+        <app-action-button text="VIEW SALES REPORT ->" [isDisabled]="false"></app-action-button>
+    </div>
+    <div class="section-content" fxLayout="column" fxLayoutGap="20px" fxFlex="80">
+        <div fxLayout="row" fxLayoutGap="20px">
+            <mat-card class="pie-chart" fxLayout="row" fxLayoutAlign="space-between" fxFlex="40">
+                <div>
+                    <p class="chart-heading">Orders</p>
+                    <p class="active">169 Active</p>
+                    <p class="processing">169 Processing</p>
+                    <p class="shipped">169 Shipped</p>
+                    <p class="delivered">169 Delivered</p>
+                    <p class="cancelled">169 Cancelled</p>
+                </div>
+                <div>
+                    <div class="orders-button">VIEW ORDERS REPORT -></div>
+                    <img class="pie-chart-img" src="../../../assets/charts/chart-pie.png" alt="">
+                </div>
+            </mat-card>
+            <mat-card fxFlex="60">
+                <mat-tab-group class="stretched-tabs" mat-stretch-tabs="false">
+                    <mat-tab *ngFor="let label of labels" class="tabs" label={{label}}>
+                        <div class="item-list" fxLayout="row" fxLayoutGap="40px">
+                            <div fxLayout="column">
+                                <div class="item" fxLayout="row" fxLayoutGap="20px">
+                                    <img class="item-img" src="../../../assets/icons/tshirt.png" alt="">
+                                    <div fxLayout="column">
+                                        <p class="item-name">Color Brown Sweater Shirt</p>
+                                        <div fxLayout="row">
+                                            <p class="item-sales">150 sales</p>
+                                            <p class="item-stock">12 in inventory</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item" fxLayout="row" fxLayoutGap="20px">
+                                    <img class="item-img" src="../../../assets/icons/tshirt.png" alt="">
+                                    <div fxLayout="column">
+                                        <p class="item-name">Color Brown Sweater Shirt</p>
+                                        <div fxLayout="row">
+                                            <p class="item-sales">150 sales</p>
+                                            <p class="item-stock">12 in inventory</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item" fxLayout="row" fxLayoutGap="20px">
+                                    <img class="item-img" src="../../../assets/icons/tshirt.png" alt="">
+                                    <div fxLayout="column">
+                                        <p class="item-name">Color Brown Sweater Shirt</p>
+                                        <div fxLayout="row">
+                                            <p class="item-sales">150 sales</p>
+                                            <p class="item-stock">12 in inventory</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                           
+                            <div fxLayout="column">
+                                <div class="item" fxLayout="row" fxLayoutGap="20px">
+                                    <img class="item-img" src="../../../assets/icons/tshirt.png" alt="">
+                                    <div fxLayout="column">
+                                        <p class="item-name">Color Brown Sweater Shirt</p>
+                                        <div fxLayout="row">
+                                            <p class="item-sales">150 sales</p>
+                                            <p class="item-stock">12 in inventory</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item" fxLayout="row" fxLayoutGap="20px">
+                                    <img class="item-img" src="../../../assets/icons/tshirt.png" alt="">
+                                    <div fxLayout="column">
+                                        <p class="item-name">Color Brown Sweater Shirt</p>
+                                        <div fxLayout="row">
+                                            <p class="item-sales">150 sales</p>
+                                            <p class="item-stock">12 in inventory</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item" fxLayout="row" fxLayoutGap="20px">
+                                    <img class="item-img" src="../../../assets/icons/tshirt.png" alt="">
+                                    <div fxLayout="column">
+                                        <p class="item-name">Color Brown Sweater Shirt</p>
+                                        <div fxLayout="row">
+                                            <p class="item-sales">150 sales</p>
+                                            <p class="item-stock">12 in inventory</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </mat-tab>
+                </mat-tab-group>
+            </mat-card>
+        </div>
+        <mat-card>
+            <div>
+                <p class="graph-title">SALES</p>
+                <img class="stacked-graph" src="../../../assets/icons/stacked-graph.png" alt="">
+            </div>
+        </mat-card>
+    </div>
+</div>

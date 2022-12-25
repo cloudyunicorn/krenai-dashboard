@@ -1,0 +1,20 @@
+<div class="tutorials-section" fxLayout="row">
+    <div class="section-heading" fxLayout="row" fxFlex="20">
+        <div class="marker"></div>
+        <div class="section-label">
+            Tutorials
+            <br>
+            & Guides
+        </div>
+    </div>
+    <div fxLayout="row" fxLayoutGap="20px" fxFlex="80" class="section-content">
+        <mat-card *ngFor="let video of videoList" class="section-content-card">
+            <img class="video-image" src="http://img.youtube.com/vi/IQSFzVgAkaw/mqdefault.jpg" alt="">
+            <h3 class="video-title">
+                {{ video.title }}
+            </h3>
+            <p> {{ video.desc }}</p>
+            <div class="action">Watch Video -></div>
+        </mat-card>
+    </div>
+</div>

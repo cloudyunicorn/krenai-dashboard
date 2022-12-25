@@ -1,0 +1,82 @@
+.marker {
+    height: 40px;
+    width: 40px;
+    margin-right: 20px;
+    background-color: #1E86FF;
+    border-radius: 10px;
+}
+.section-label {
+    font-size: 16px;
+    font-weight: 500;
+}
+.pie-chart {
+    color: gray;
+    font-weight: 500;
+    .active {
+        color: #855CF8;
+    }
+    .processing {
+        color: #32B4A4;
+    }
+    .shipped {
+        color: #E3A76F;
+    }
+    .delivered {
+        color: #FDBF00;
+    }
+    .cancelled {
+        color: #E63950;
+    }
+    &-img {
+        height: 200px;
+    }
+    .chart-heading {
+        margin-bottom: 20px;
+    }
+    .orders-button {
+        text-align: end;
+    }
+}
+.item-list {
+    margin-top: 30px;
+    font-weight: 500;
+    .item {
+    
+        &-img {
+            height: 54px;
+            width: 50px;
+        }
+        &-name {
+            margin-bottom: 5px;
+            font-size: 16px;
+        }
+        &-sales {
+            color: #15A997;
+            padding-right: 10px;
+        }
+        &-stock {
+            color: #FDBF00;
+        }
+    }
+}
+.graph-title {
+    font-weight: 500;
+    color: gray;
+}
+.stacked-graph {
+    width: 100%;
+}
+.mat-tab-label-container {
+    display: flex;
+    flex-grow: 1;
+    overflow: hidden;
+    z-index: 1;
+    overflow-x: scroll !important;
+}
+::ng-deep.mat-tab-label, ::ng-deep.mat-tab-label-active{
+    min-width: 0!important;
+    padding: 3px!important;
+    margin: 3px!important;
+    max-width: 100px !important;
+    max-height: 20px !important;
+   }

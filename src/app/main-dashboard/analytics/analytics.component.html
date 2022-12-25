@@ -1,0 +1,56 @@
+<div class="analytics-section" fxLayout="row">
+    <div class="section-heading" fxLayout="row" fxFlex="20">
+        <div class="marker"></div>
+        <div class="section-label">
+            Website
+            <br>
+            Analytics
+        </div>
+    </div>
+    <div class="section-content" fxLayout="row" fxLayoutGap="20px" fxFlex="80">
+        <mat-card fxFlex="45">
+            <div>
+                <img class="bar-graph" src="../../../assets/icons/bar-graph.png" alt="">
+                <p class="bar-graph-title">Active Users</p>
+                <p>(+23%) than last week</p>
+                <div fxLayout="row" fxLayoutGap="30px">
+                    <div>
+                        <p>icon</p>
+                        <p>number</p>
+                    </div>
+                    <div>
+                        <p>icon</p>
+                        <p>number</p>
+                    </div>
+                    <div>
+                        <p>icon</p>
+                        <p>number</p>
+                    </div>
+                    <div>
+                        <p>icon</p>
+                        <p>number</p>
+                    </div>
+                </div>
+            </div>
+        </mat-card>
+        <mat-card class="activity-card" fxLayout="column" fxFlex="55">
+            <p class="card-title">CUSTOMER ACTIVITIES</p>
+            <div class="activity-list" fxLayout="column" *ngFor="let number of [0, 1, 2, 3, 4, 5, 6]">
+                <div fxLayout="row" fxLayoutAlign="space-between">
+                    <div class="bullet"></div>
+                    <p>Rajat Singh added 2 products on the
+                    <br>
+                    cart but didn't order anything</p>
+                    <div class="action">TAKE ACTION -></div>
+                </div>
+            </div>
+            <div fxLayout="row" class="action-transparent">
+                <mat-icon class="launch-icon" color="primary">launch</mat-icon>
+                <div fxLayout="column">
+                    <p class="button-label">Remarket all your potential customers</p>
+                    <button mat-raised-button color="primary">Primary</button>
+                </div>
+            </div>
+        </mat-card>
+    </div>
+</div>

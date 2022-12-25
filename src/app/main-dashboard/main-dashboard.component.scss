@@ -1,0 +1,17 @@
+.main-content {
+    padding: 20px;
+    .greeting {
+        color: gray;
+        font-size: 18px;
+        font-weight: 500;
+    }
+    .greeting-name {
+        color: black;
+        margin-bottom: 0px;
+    }
+    .header-filters {
+        height: 36px;
+        border-radius: 7.5px;
+        box-shadow: 0 0 5px rgb(201, 201, 201);
+    }
+}

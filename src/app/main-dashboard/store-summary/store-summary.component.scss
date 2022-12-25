@@ -1,0 +1,34 @@
+.marker {
+    height: 40px;
+    width: 40px;
+    margin-right: 20px;
+    background-color: #1E86FF;
+    border-radius: 10px;
+}
+.section-label {
+    font-size: 16px;
+    font-weight: 500;
+}
+.store-icon {
+    height: 40px;
+    width: 40px;
+}
+.action {
+    margin-top: 5px;
+    &:hover {
+        cursor: pointer;
+    }
+}
+.stats {
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 24px;
+    font-weight: 700;
+    &-desc {
+        margin-left: 10px;
+        margin-top: 0;
+        color: gray;
+        font-weight: 500;
+    }
+}

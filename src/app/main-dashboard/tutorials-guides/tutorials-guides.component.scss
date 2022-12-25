@@ -1,0 +1,36 @@
+.tutorials-section {
+    .marker {
+        height: 40px;
+        width: 40px;
+        margin-right: 20px;
+        background-color: #1E86FF;
+        border-radius: 10px;
+    }
+    .section-label {
+        font-size: 16px;
+        font-weight: 500;
+    }
+    .section-content {
+        overflow-x: auto;
+        height: 300px;
+        padding-top: 10px;
+        padding-left: 1px;
+        &::-webkit-scrollbar {
+            height: 0;
+            background: transparent;
+        }
+        &-card {
+            height: 250px;
+            width: 200px;
+            .video-image {
+                width: 180px;
+            }
+            .action {
+                margin-top: 5px;
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

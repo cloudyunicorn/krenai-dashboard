@@ -1,0 +1,28 @@
+<div class="todo-section" fxLayout="row">
+    <div class="section-heading" fxLayout="column" fxFlex="20">
+        <div fxLayout="row" fxFlex="20">
+            <div class="marker"></div>
+            <div class="section-label">
+                Today's
+                <br>
+                To Do
+            </div>
+        </div>
+        <app-action-button text="Go to Todo's ->" [isDisabled]="false"></app-action-button>
+    </div>
+    <mat-card fxFlex="80" fxLayout="row" fxLayoutAlign="space-between">
+        <div fxLayout="column">
+            <div *ngFor="let todoTask of todoList" class="section-content" fxLayout="row">
+                <div>
+                    <mat-icon [ngClass]="todoTask.status == 1 ? 'active' : 'inactive'">fiber_manual_record</mat-icon>
+                </div>
+                <div class="list">{{ todoTask.task }}</div>
+            </div>
+        </div>
+        <div fxLayout="column">
+            <app-action-button text="GO TO BILLINGS ->" [isDisabled]="false"></app-action-button>
+            <app-action-button text="GO TO ORDERS ->" [isDisabled]="false"></app-action-button>
+            <app-action-button text="CHECK INVENTORY ->" [isDisabled]="false"></app-action-button>
+        </div>
+    </mat-card>
+</div>

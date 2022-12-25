@@ -1,0 +1,52 @@
+.marker {
+    height: 40px;
+    width: 40px;
+    margin-right: 20px;
+    background-color: #1E86FF;
+    border-radius: 10px;
+}
+.section-label {
+    font-size: 16px;
+    font-weight: 500;
+}
+.bar-graph {
+    width: 100%;
+    &-title {
+        font-weight: 500;
+    }
+}
+.card-title {
+    font-weight: 500;
+    color: gray;
+    margin-bottom: 30px;
+}
+.bullet {
+    background-color: lightgray;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+.button-label {
+    font-weight: 500;
+    margin-top: 20px;
+}
+.launch-icon {
+    font-size: 50px;
+    width: 50px;
+    height: 50px;
+    padding-right: 20px;
+    padding-top: 30px;
+}
+.activity-card {
+    height: 420px;
+}
+.activity-list {
+    height: 100%;
+}
+.action-transparent {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    padding-bottom: 20px;
+    background-color: rgb(255, 255, 255, 0.8);
+}
