@@ -28,8 +28,14 @@
             visibility: hidden;
         }
     }
+    &-options:hover {
+            color: #007E8B;
+    }
     .menu-button {
         background-color: #ECECEC;
+        &:hover {
+            color: #007E8B;
+        }
         @media (max-width: 640px) {
             visibility: hidden;
         }
@@ -37,6 +43,17 @@
     mat-icon {
         z-index: 100;
     }
+    .menu-count {
+        background-color: #007E8B;
+        color: white;
+        text-align: center;
+        font-size: 12px;
+        height: 18px;
+        width: 18px;
+        margin-top: 10px;
+        border-radius: 5px;
+    }
+    
     .plan-card {
         background-color: white;
         border-radius: 10px;
