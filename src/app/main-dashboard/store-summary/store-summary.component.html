@@ -1,4 +1,4 @@
-<div class="summary-section" fxLayout="row">
+<div class="summary-section" fxLayout="row" fxLayout.xs="column" fxLayout.sm="column" fxLayout.md="column">
     <div class="section-heading" fxLayout="row" fxFlex="20">
         <div class="marker"></div>
         <div class="section-label">
@@ -7,46 +7,50 @@
             Store Summary
         </div>
     </div>
-    <div class="section-content" fxFlex="80" fxLayout="row">
-        <div fxFlex="25" fxLayout="column">
-            <div fxLayout="row">
-                <img class="store-icon" src="../../../assets/icons/icons8-notepad-64.png" alt="">
-                <div>
-                    <p class="stats">169</p>
-                    <p class="stats-desc">Total Orders</p>
+    <div class="section-content" fxFlex="80" fxLayout="row" fxLayout.xs="column" fxLayout.sm="column">
+        <div fxLayout="row" fxLayout.xs="column" fxFlex="50">
+            <div fxFlex="50" fxLayout="column">
+                <div fxLayout="row">
+                    <img class="store-icon" src="../../../assets/icons/icons8-notepad-64.png" alt="">
+                    <div>
+                        <p class="stats">169</p>
+                        <p class="stats-desc">Total Orders</p>
+                    </div>
                 </div>
+                <app-action-button text="MANAGE ORDERS ->" [isDisabled]="false"></app-action-button>
             </div>
-            <app-action-button text="MANAGE ORDERS ->" [isDisabled]="false"></app-action-button>
+            <div fxFlex="50" fxLayout="column">
+                <div fxLayout="row">
+                    <img class="store-icon" src="../../../assets/icons/icons8-office-64.png" alt="">
+                    <div>
+                        <p class="stats">169</p>
+                        <p class="stats-desc">Total Orders</p>
+                    </div>
+                </div>
+                <app-action-button text="MANAGE SALES ->" [isDisabled]="false"></app-action-button>
+            </div>
         </div>
-        <div fxFlex="25" fxLayout="column">
-            <div fxLayout="row">
-                <img class="store-icon" src="../../../assets/icons/icons8-office-64.png" alt="">
-                <div>
-                    <p class="stats">169</p>
-                    <p class="stats-desc">Total Orders</p>
+        <div fxLayout="row" fxLayout.xs="column" fxFlex="50">
+            <div fxFlex="50" fxLayout="column">
+                <div fxLayout="row">
+                    <img class="store-icon" src="../../../assets/icons/icons8-customer-64.png" alt="">
+                    <div>
+                        <p class="stats">169</p>
+                        <p class="stats-desc">Total Orders</p>
+                    </div>
                 </div>
+                <app-action-button text="MANAGE CUSTOMERS ->" [isDisabled]="false"></app-action-button>
             </div>
-            <app-action-button text="MANAGE SALES ->" [isDisabled]="false"></app-action-button>
-        </div>
-        <div fxFlex="25" fxLayout="column">
-            <div fxLayout="row">
-                <img class="store-icon" src="../../../assets/icons/icons8-customer-64.png" alt="">
-                <div>
-                    <p class="stats">169</p>
-                    <p class="stats-desc">Total Orders</p>
+            <div fxFlex="50" fxLayout="column">
+                <div fxLayout="row">
+                    <img class="store-icon" src="../../../assets/icons/icons8-box-64.png" alt="">
+                    <div>
+                        <p class="stats">169</p>
+                        <p class="stats-desc">Total Orders</p>
+                    </div>
                 </div>
+                <app-action-button text="MANAGE INVENTORY ->" [isDisabled]="false"></app-action-button>
             </div>
-            <app-action-button text="MANAGE CUSTOMERS ->" [isDisabled]="false"></app-action-button>
-        </div>
-        <div fxFlex="25" fxLayout="column">
-            <div fxLayout="row">
-                <img class="store-icon" src="../../../assets/icons/icons8-box-64.png" alt="">
-                <div>
-                    <p class="stats">169</p>
-                    <p class="stats-desc">Total Orders</p>
-                </div>
-            </div>
-            <app-action-button text="MANAGE INVENTORY ->" [isDisabled]="false"></app-action-button>
         </div>
     </div>
 </div>

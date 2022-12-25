@@ -1,4 +1,4 @@
-<div class="todo-section" fxLayout="row">
+<div class="todo-section" fxLayout="row" fxLayout.xs="column" fxLayout.sm="column" fxLayout.md="column">
     <div class="section-heading" fxLayout="column" fxFlex="20">
         <div fxLayout="row" fxFlex="20">
             <div class="marker"></div>
@@ -10,10 +10,10 @@
         </div>
         <app-action-button text="Go to Todo's ->" [isDisabled]="false"></app-action-button>
     </div>
-    <mat-card fxFlex="80" fxLayout="row" fxLayoutAlign="space-between">
+    <mat-card fxFlex="80" fxLayout="row" fxLayout.xs="column" fxLayoutAlign="space-between">
         <div fxLayout="column">
             <div *ngFor="let todoTask of todoList" class="section-content" fxLayout="row">
-                <div>
+                <div class="bullet-point">
                     <mat-icon [ngClass]="todoTask.status == 1 ? 'active' : 'inactive'">fiber_manual_record</mat-icon>
                 </div>
                 <div class="list">{{ todoTask.task }}</div>

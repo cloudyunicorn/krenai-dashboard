@@ -7,6 +7,9 @@
         margin-left: 15px;
         font-weight: 900;
         color: #FE4D55;
+        @media (max-width: 640px) {
+            visibility: hidden;
+        }
     }
     .sub-heading {
         margin-left: 20px;
@@ -14,15 +17,27 @@
         margin-top: 20px;
         font-weight: 600;
         color: gray;
+        @media (max-width: 640px) {
+            visibility: hidden;
+        }
     }
     .menu-button {
         background-color: #ECECEC;
+        @media (max-width: 640px) {
+            visibility: hidden;
+        }
+    }
+    mat-icon {
+        z-index: 100;
     }
     .plan-card {
         background-color: white;
         border-radius: 10px;
         margin: 20px 15px;
-        height: 150px;
+        max-height: 200px;
+        @media (max-width: 960px) {
+            display: none !important;
+        }
         .progress {
             font-size: 12px;
             font-weight: 500;
@@ -32,12 +47,6 @@
             p {
                 margin-bottom: 2px;
             }
-        }
-        .progress-bar {
-            width: 100px;
-            height: 20px;
-            background-color: red;
-            margin: 5px 10px;
         }
         mat-progress-bar {
             width: calc(100% - 25px);
@@ -55,6 +64,28 @@
                 background-color: #005d68;
                 cursor: pointer;
             }
+        }
+    }
+    .account-details {
+        font-size: 16px;
+        font-weight: 500;
+        padding-top: 10px;
+    }
+    .user-image {
+        padding-bottom: 10px;
+    }
+    .user-name {
+        margin-bottom: 0;
+        @media (max-width: 640px) {
+            visibility: hidden;
+        }
+    }
+    .user-email {
+        color: gray;
+        font-size: 12px;
+        line-height: 16px;
+        @media (max-width: 640px) {
+            visibility: hidden;
         }
     }
 }

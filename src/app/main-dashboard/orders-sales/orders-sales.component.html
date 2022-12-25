@@ -1,4 +1,4 @@
-<div class="orders-sales-section" fxLayout="row">
+<div class="orders-sales-section" fxLayout="row" fxLayout.xs="column" fxLayout.sm="column" fxLayout.md="column">
     <div class="section-heading" fxLayout="column" fxFlex="20">
         <div fxLayout="row">
             <div class="marker"></div>
@@ -13,7 +13,7 @@
         <app-action-button text="VIEW SALES REPORT ->" [isDisabled]="false"></app-action-button>
     </div>
     <div class="section-content" fxLayout="column" fxLayoutGap="20px" fxFlex="80">
-        <div fxLayout="row" fxLayoutGap="20px">
+        <div fxLayout="row" fxLayout.xs="column" fxLayout.sm="column" fxLayoutGap="20px">
             <mat-card class="pie-chart" fxLayout="row" fxLayoutAlign="space-between" fxFlex="40">
                 <div>
                     <p class="chart-heading">Orders</p>
